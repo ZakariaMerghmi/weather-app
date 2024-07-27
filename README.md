@@ -6,6 +6,7 @@
 
 **after searching of a location that existes**
 
+   ![searching-exists-weather](https://github.com/user-attachments/assets/0d2cd68e-6d62-4743-86f7-e496a931af4b)
 
 
 **after searching of a location that don't exist**
