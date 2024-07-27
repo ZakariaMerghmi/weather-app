@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="weather.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="search-container">
+        <i class="fa-solid fa-location-dot" id="location"></i>
+        <input type="search" class="search" placeholder="enter your location">
+        <button id="search"><i class="fa-solid fa-magnifying-glass" ></i></button>
+    </div>
+    <div class="weather-container">
+        <div class="box">
+            <div class="info-weather">
+                <div class="weather">
+                    <img src="cloud.png" alt="">
+                    <p class="temp">16 <span>°C</span></p>
+                    <p class="desc">Brroken clouds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="humidity">
+        <i class="fa-solid fa-water" id="humidity-icon"></i>
+        <div class="text">
+            <div class="humidity-info">
+                <span>0%</span>
+                <p>humidity</p>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind" id="wind-icon"></i>
+                <div class="text wind-info">
+                    <span>20km\h</span>
+                    <p>wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notfound" >
+        <img src="404.png" alt="">
+        <p>oooops! location not found!!</p>
+    </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

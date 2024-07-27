@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: rgba(250, 250, 250, .1 );
+    height: 650px;
+    width: 550px;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    border: solid 2px rgba(250, 250, 250, .2 );
+    
+    
+}
+.search-container{
+    margin: 50px 90px;
+}
+.search-container input{
+    height: 40px;
+    width: 400px;
+    padding: 0 40px;
+    border-radius: 10px;
+    border: solid 2px rgba(250, 250, 250, .2 );
+    text-transform: capitalize;
+    color: white;
+    font-size: large;
+    position: relative;
+    bottom: 20px;
+    background-color: transparent;
+}
+.search-container input::placeholder{
+color: white;
+}
+#location{
+    position: relative;
+    bottom:-11px;
+    left: 10px;
+    font-size: 130%;
+    opacity:inherit;
+    color: white;
+}
+#search{
+    position: relative;
+    left: 370px;
+    bottom: 50px;
+    font-size: 120%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+#search:hover{
+    cursor: pointer;
+}
+.weather-container img{
+    width: 50%;
+    
+}
+.weather{
+    position: relative;
+    left: 120px;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.desc{
+    position: relative;
+    left: 80px;
+    top: 50px;
+    color: white;
+    font-size: x-large;
+    font-weight: 800px;
+    
+}
+.temp{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.temp span{
+    font-size: 30px;
+    position: relative;
+    bottom: 20px;
+    right: 5px;
+}
+.humidity{
+    position: relative;
+    top: 30px;
+    left: 150px;
+}
+.humidity-info{
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+#humidity-icon{
+    color: white;
+    font-size: 250%;
+    position: relative;
+    right: 65px;
+    top: 40px;
+}
+.wind{
+    position: relative;
+    left: 240px;
+    bottom: 90px;
+}
+.wind-info{
+    color: white;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+#wind-icon{
+    color: white;
+    font-size: 250%;
+    position: relative;
+    right:  60px;
+    top: 40px;
+}
+.erreur{
+    opacity: 0;
+}
+.weather-active{
+    opacity: 1;
+}
+.notfound{
+    position: relative;
+    bottom: 500px;
+    left: 70px;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+.notfound-active{
+    position: relative;
+    bottom: 500px;
+    left: 70px;
+    opacity: 1;
+}
+.notfound img{
+    width: 80%;
+}
+.notfound p{
+    color: white;
+    font-size: x-large;
+    font-weight: 800;
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
